@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Html to Pdf Form</title>
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<h2>html to pdf</h2>
+		<form action="index.php" method="POST">
+			<div class="form-group">
+				<label>Name</label> <input type="text" value="doc.pdf"
+					placeholder="documentname.pdf" class="form-control" name="name">
+			</div>
+			<div class="form-group">
+				<label>Html</label>
+				<textarea rows="10" name="document" class="form-control"
+					placeholder="<html></html>"></textarea>
+			</div>
+			<div class="form-group">
+				<label>Settings (json)</label>
+				<textarea rows="10" name="settings" class="form-control" placeholder="{}"></textarea>
+			</div>
+			<input type="submit" class="btn btn-primary btn-lg" value="go" title="GO!">
+		</form>
+	</div>
+</body>
+</html>
